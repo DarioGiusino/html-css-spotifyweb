@@ -5,9 +5,26 @@
     box-sizing: border-box;
 }
 
+:root{
+    --dark-writing: #636363;
+}
+
 /* generics */
 body{
     font-family: 'Montserrat', sans-serif;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    display: block;
 }
 
     /* layout */
@@ -24,6 +41,7 @@ main{
 nav{
     flex-basis: 65px;
     background-color: #000;
+    color: var(--dark-writing);
 }
 
 #main{
@@ -52,8 +70,23 @@ header{
 }
 
 /* utilities */
-.flex{
+.min-height-50{
+    min-height: 50px;
+    background-color: darkred;
+    border: 1px dashed yellow;
+}
+
+.flex-row{
     display: flex;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.d-none{
+    display: none;
 }
 
 /* header */
@@ -68,6 +101,14 @@ header{
     border-radius: 50px;
 }
 
+/* LEFT NAVBAR */
+nav.flex-column{
+    justify-content: space-between;
+}
+
+.nav-playlist{
+    min-height: 300px;
+}
 
 
 
@@ -88,5 +129,10 @@ header{
 
     header{
         left: 250px;
+    }
+
+    /* LEFT-NAVBAR */
+    .nav-playlist{
+        display: block;
     }
 }
