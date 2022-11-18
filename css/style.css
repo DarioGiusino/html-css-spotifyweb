@@ -1,0 +1,53 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* generics */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+    /* layout */
+footer{
+    height: 100px;
+    background-color: gray;
+}
+
+main{
+    height: calc(100vh - 100px);
+}
+    /* main layout */
+nav{
+    flex-basis: 65px;
+    background-color: black;
+}
+
+.main{
+    flex-basis: calc(100vw - 65px);
+    height: calc(100vh - 100px);
+    background-color: darkblue;
+}
+
+header{
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 65px;
+}
+
+.main-content{
+    height: calc(100vh - 100px);
+    padding-top: 100px;
+    overflow-y: auto ;
+    
+}
+
+/* utilities */
+.flex{
+    display: flex;
+}
+
