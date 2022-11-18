@@ -15,7 +15,7 @@ body{
 }
 
 img{
-    display: block;
+    display: inline-block;
     max-width: 100%;
 }
 
@@ -25,6 +25,7 @@ ul{
 
 a{
     display: block;
+    text-decoration: none;
 }
 
     /* layout */
@@ -42,6 +43,7 @@ nav{
     flex-basis: 65px;
     background-color: #000;
     color: var(--dark-writing);
+    padding: 10px
 }
 
 #main{
@@ -89,6 +91,10 @@ header{
     display: none;
 }
 
+.relative{
+    position: relative;
+}
+
 /* header */
 .upgrade-btn{
     text-transform: uppercase;
@@ -99,16 +105,115 @@ header{
     background-color: transparent;
     color: #fff;
     border-radius: 50px;
+    cursor: pointer;
 }
 
 /* LEFT NAVBAR */
+    /* layout */
 nav.flex-column{
     justify-content: space-between;
+    align-items: center;
 }
 
-.nav-playlist{
-    min-height: 300px;
+    /* top-nav */
+.nav-logo{
+    margin-bottom: 10px;
 }
+
+.large-logo{
+    width: 160px;
+    margin: 15px 5px;
+}
+
+nav img{
+    width: 35px;
+}
+
+.nav-menu img{
+    opacity: 0.9;
+    transform: scale(0.8);
+    vertical-align: middle;
+}
+
+    /* bottom-nav */
+.nav-download{
+    position: relative;
+    right: 5px;
+    top: 10px;
+}
+
+.down-ico{
+    transform: scale(0.5);
+    vertical-align: middle;
+}
+
+.nav-profile-img{
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav-profile img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.bottom-nav > *{
+    margin-bottom: 10px;
+}
+
+.nav-desc{
+    color: var(--dark-writing);
+    font-weight: bold;
+    vertical-align: middle;
+    font-size: 15px;
+}
+
+.nav-profile .nav-desc{
+    color: #fff;
+}
+
+    /* nav playlist */
+.nav-playlist h4{
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px 0px;
+}
+
+.playlist-btn{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #a3a3a3;
+    margin-right: 5px;
+}
+
+.playlist-btn a{
+    color: #000;
+    text-align: center;
+    line-height: 40px;
+}
+
+.playlist-btn i{
+    vertical-align: middle;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-playlist span{
+    font-weight: bold;
+}
+
+.playlist-list li{
+    font-size: 15px;
+    font-weight: bolder;
+    margin: 20px 0px;
+}
+
 
 
 
@@ -132,7 +237,42 @@ nav.flex-column{
     }
 
     /* LEFT-NAVBAR */
+    nav.flex-column{
+        align-items: flex-start;
+    }
+
+    .logo-small{
+        display: none;
+    }
+
+    .large-logo{
+        display: block;
+    }
+
+    .nav-menu{
+        padding: 15px 0px;
+    }
+
+    .nav-desc{
+        display: inline-block;
+    }
+
     .nav-playlist{
         display: block;
+    }
+
+    .bottom-nav{
+        width: 100%;
+    }
+
+    .nav-download{
+        position: relative;
+        right: 5px;
+        top: 10px;
+    }
+
+    .nav-profile{
+        border-top: 1px solid var(--dark-writing);
+        padding-top: 10px;
     }
 }
