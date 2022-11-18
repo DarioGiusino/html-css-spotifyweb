@@ -24,7 +24,7 @@ nav{
     background-color: black;
 }
 
-.main{
+#main{
     flex-basis: calc(100vw - 65px);
     height: calc(100vh - 100px);
     background-color: darkblue;
@@ -51,3 +51,25 @@ header{
     display: flex;
 }
 
+
+
+
+/* ************************
+    RESPONSIVE (mobile-first 552px)
+   ************************ */
+
+/* dai 639px */
+@media screen and (min-width: 639px){
+    /* main layout */
+    nav{
+        flex-basis: 250px;
+    }
+
+    #main{
+        flex-basis: calc(100vw - 250px);
+    }
+
+    header{
+        left: 250px;
+    }
+}
