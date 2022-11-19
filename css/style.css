@@ -100,16 +100,23 @@ header{
     flex-direction: column;
 }
 
+.fb-20{
+    flex-basis: 20%;
+}
+
 .fb-25{
     flex-basis: 25%;
+}
+.fb-33{
+    flex-basis: calc(100% / 3);
 }
 
 .fb-50{
     flex-basis: 50%;
 }
 
-.fb-33{
-    flex-basis: calc(100% / 3);
+.fb-60{
+    flex-basis: 60%;
 }
 
 .fb-66{
@@ -278,6 +285,74 @@ nav img{
     gap: 10px;
 }
 
+/* CENTRAL FOOTER */
+    /* central footer top */
+.central-footer-top{
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.lateral-btn-player{
+    font-size: 19px;
+    letter-spacing: 10px;
+}
+
+.central-btn-player{
+    font-size: 35px;
+}
+
+    /* central footer bottom */
+.central-footer-bottom{
+    padding: 10px;
+    align-items: center;
+}
+
+.central-footer-bottom span{
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.central-footer-bottom span:first-child{
+    padding-right: 10px;
+    text-align: end;
+}
+
+.central-footer-bottom span:last-child{
+    padding-left: 10px;
+}
+
+.progress-bar{
+    width: 100%;
+    height: 5px;
+    background-color: var(--bar-background);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.value{
+    height: 100%;
+    width: 30%;
+    background-color: var(--bar-loading);
+    border-radius: 5px;
+    position: relative;
+}
+
+.marker{
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.progress-bar:hover .marker{
+    display: block;
+}
 
 
 
