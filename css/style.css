@@ -87,6 +87,14 @@ header{
     flex-direction: column;
 }
 
+.fb-25{
+    flex-basis: 25%;
+}
+
+.fb-50{
+    flex-basis: 50%;
+}
+
 .d-none{
     display: none;
 }
@@ -138,8 +146,8 @@ nav img{
     /* bottom-nav */
 .nav-download{
     position: relative;
-    right: 5px;
-    top: 10px;
+    right: 3px;
+    top: 0px;
 }
 
 .down-ico{
