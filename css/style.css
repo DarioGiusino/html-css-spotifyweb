@@ -1,4 +1,4 @@
-/* reset */
+/****************** RESET **********************/
 *{
     margin: 0;
     padding: 0;
@@ -7,15 +7,18 @@
 
 :root{
     --dark-writing: #636363;
+    --footer-dark-writing: #878787;
+    --bar-background: #5a5a5a;
+    --bar-loading: #c1c1c1;
 }
 
-/* generics */
+/****************** GENERICS **********************/
 body{
     font-family: 'Montserrat', sans-serif;
 }
 
 img{
-    display: inline-block;
+    display: block;
     max-width: 100%;
 }
 
@@ -32,6 +35,7 @@ a{
 footer{
     height: 100px;
     background-color: #282828;
+    color: #fff;
 }
 
 main{
@@ -71,13 +75,22 @@ header{
     overflow-y: auto ;
 }
 
-/* utilities */
+/****************** UTILITIES **********************/
 .min-height-50{
     min-height: 50px;
     background-color: darkred;
     border: 1px dashed yellow;
 }
 
+.d-none{
+    display: none;
+}
+
+.relative{
+    position: relative;
+}
+
+    /* flex utilities */
 .flex-row{
     display: flex;
 }
@@ -95,15 +108,19 @@ header{
     flex-basis: 50%;
 }
 
-.d-none{
-    display: none;
+.fb-33{
+    flex-basis: calc(100% / 3);
 }
 
-.relative{
-    position: relative;
+.fb-66{
+    flex-basis: calc(100% / 3 * 2);
 }
 
-/* header */
+/* **************************************************
+                        BODY
+   **************************************************/
+
+/* TRANSPARENT HEADER */
 .upgrade-btn{
     text-transform: uppercase;
     font-weight: 600;
@@ -116,11 +133,19 @@ header{
     cursor: pointer;
 }
 
-/* LEFT NAVBAR */
-    /* layout */
+/******** LEFT NAVBAR *********/
+    /* left navbar layout */
 nav.flex-column{
     justify-content: space-between;
     align-items: center;
+}
+
+    /* left navbar font */
+.nav-desc{
+    color: var(--dark-writing);
+    font-weight: bold;
+    vertical-align: middle;
+    font-size: 15px;
 }
 
     /* top-nav */
@@ -174,13 +199,6 @@ nav img{
     margin-bottom: 10px;
 }
 
-.nav-desc{
-    color: var(--dark-writing);
-    font-weight: bold;
-    vertical-align: middle;
-    font-size: 15px;
-}
-
 .nav-profile .nav-desc{
     color: #fff;
 }
@@ -222,15 +240,54 @@ nav img{
     margin: 20px 0px;
 }
 
+/******** FOOTER/PLAYER *********/
+
+/* LEFT FOOTER */
+    /* left footer layout */
+.left-footer{
+    justify-content: space-between;
+}
+
+.left-footer-track{
+    align-items: center;
+    padding: 10px;
+}
+
+    /* left footer track */
+.footer-img img{
+    width: 50px;
+}
+
+.footer-track-name{
+    padding: 5px;
+    line-height: 8px;
+}
+
+.footer-track-name sub{
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--footer-dark-writing);
+}
+
+    /* left footer icons */
+.left-footer-icons{
+    color: var(--footer-dark-writing);
+    justify-content: center;
+    padding: 0px;
+    font-size: 17px;
+    gap: 10px;
+}
 
 
 
-/* ************************
-    RESPONSIVE (mobile-first 552px)
-   ************************ */
 
-/* dai 639px */
+/* **************************************************
+        RESPONSIVE (mobile-first 552px)
+   **************************************************/
+
+/****************** DAI 639px **********************/
 @media screen and (min-width: 639px){
+/******** GENERICS *********/
     /* main layout */
     nav{
         flex-basis: 250px;
@@ -244,11 +301,18 @@ nav img{
         left: 250px;
     }
 
-    /* LEFT-NAVBAR */
+/******** BODY *********/
+    /* LEFT NAVBAR */
+        /* left navbar layout */
     nav.flex-column{
         align-items: flex-start;
     }
 
+    nav img{
+        display: inline-block;
+    }
+    
+        /* top-nav */
     .logo-small{
         display: none;
     }
@@ -269,6 +333,7 @@ nav img{
         display: block;
     }
 
+        /* bottom-nav */
     .bottom-nav{
         width: 100%;
     }
