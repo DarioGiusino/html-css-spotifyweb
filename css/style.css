@@ -458,3 +458,30 @@ nav img{
         padding-top: 10px;
     }
 }
+
+
+/****************** DAI 878 **********************/
+@media screen and (min-width: 878px){
+/******** BODY *********/
+    /* FOOTER/PLAYER */
+        /* left-footer */
+    .left-footer{
+        gap: 20px;
+    }
+
+    .left-footer-icons{
+    flex-direction: row;
+    align-items: center;
+    }
+
+        /* right-footer */
+    .right-footer .progress-bar {
+        width: 130px;
+    }
+
+    .right-footer-icons i {
+        padding-right: 15px;
+    }
+
+
+}
