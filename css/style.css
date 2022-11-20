@@ -440,6 +440,12 @@ nav img{
     font-weight: bold;
 }
 
+    /* rounded card */
+.rounded{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
 
 
 /* **************************************************
