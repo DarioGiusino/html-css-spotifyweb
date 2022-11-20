@@ -6,6 +6,7 @@
 }
 
 :root{
+    --main-darkwriting: #7d7f84;
     --dark-writing: #636363;
     --footer-dark-writing: #878787;
     --bar-background: #5a5a5a;
@@ -71,8 +72,9 @@ header{
 
 .main-content{
     height: calc(100vh - 100px);
-    padding-top: 100px;
+    padding: 115px 15px 15px;
     overflow-y: auto ;
+    color: #fff;
 }
 
 /****************** UTILITIES **********************/
@@ -98,6 +100,10 @@ header{
 .flex-column{
     display: flex;
     flex-direction: column;
+}
+
+.wrap{
+    flex-wrap: wrap;
 }
 
 .fb-20{
@@ -352,10 +358,6 @@ nav img{
     font-size: 13px;
 }
 
-
-
-
-
 /* FOOTER PROGRESS BAR(S) */
 .progress-bar{
     width: 100%;
@@ -386,6 +388,24 @@ nav img{
 
 .progress-bar:hover .marker{
     display: block;
+}
+
+/******** MAIN CONTENT *********/
+    /* main-content-menu */
+.main-content-menu{
+    justify-content: center;
+ font-weight: bold;
+ font-size: 14px;
+}
+
+.main-content-menu li{
+    padding: 0 8px 40px;
+}
+
+.main-content-menu a{
+    color: var(--main-darkwriting);
+    text-transform: uppercase;
+
 }
 
 
