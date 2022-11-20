@@ -542,6 +542,11 @@ nav img{
         padding-right: 15px;
     }
 
+    .right-footer .progress-bar{
+        width: 130px;
+        flex-basis: auto;
+    }
+
     /* ROW+CARD EDITING SOUNDTRACK */
     .soundtrack-card{
         flex-basis: 25%;
