@@ -107,8 +107,17 @@ header{
 .fb-25{
     flex-basis: 25%;
 }
+
+.fb-30{
+    flex-basis: 30%;
+}
+
 .fb-33{
     flex-basis: calc(100% / 3);
+}
+
+.fb-45{
+    flex-basis: 45%;
 }
 
 .fb-50{
@@ -251,10 +260,6 @@ nav img{
 
 /* LEFT FOOTER */
     /* left footer layout */
-.left-footer{
-    justify-content: space-between;
-}
-
 .left-footer-track{
     align-items: center;
     padding: 10px;
@@ -280,7 +285,6 @@ nav img{
 .left-footer-icons{
     color: var(--footer-dark-writing);
     justify-content: center;
-    padding: 0px;
     font-size: 17px;
     gap: 10px;
 }
@@ -291,12 +295,22 @@ nav img{
     padding: 5px;
     justify-content: center;
     align-items: center;
-    gap: 30px;
 }
 
 .lateral-btn-player{
     font-size: 19px;
-    letter-spacing: 10px;
+}
+
+.central-footer .lateral-btn-player:first-child{
+    padding-right: 20px;
+}
+
+.central-footer .lateral-btn-player:last-child{
+    padding-left: 20px;
+}
+
+.lateral-btn-player i{
+    padding: 8px;
 }
 
 .central-btn-player{
@@ -323,6 +337,26 @@ nav img{
     padding-left: 10px;
 }
 
+/* RIGHT FOOTER */
+.right-footer{
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.right-footer .progress-bar{
+    margin-right: 5px;
+}
+    /* right footer icons */
+.right-footer-icons i{
+    padding-right: 8px;
+    font-size: 13px;
+}
+
+
+
+
+
+/* FOOTER PROGRESS BAR(S) */
 .progress-bar{
     width: 100%;
     height: 5px;
