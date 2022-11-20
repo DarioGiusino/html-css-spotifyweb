@@ -419,13 +419,13 @@ nav img{
 .row{
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
-    margin: 30px 0px 40px 0px ;
+    margin: 30px -5px 40px -5px;
 }
 
     /* card */
 .soundtrack-card{
-    width: 220px;
+    flex-basis: 50%;
+    padding: 5px;
     text-align: center;
     text-transform: capitalize;
 }
@@ -445,6 +445,7 @@ nav img{
     border-radius: 50%;
     overflow: hidden;
 }
+
 
 
 
@@ -518,7 +519,7 @@ nav img{
 }
 
 
-/****************** DAI 878 **********************/
+/****************** DAI 878px **********************/
 @media screen and (min-width: 878px){
 /******** BODY *********/
     /* FOOTER/PLAYER */
@@ -541,5 +542,17 @@ nav img{
         padding-right: 15px;
     }
 
+    /* ROW+CARD EDITING SOUNDTRACK */
+    .soundtrack-card{
+        flex-basis: 25%;
+    }
+}
 
+
+/****************** DAI 1400px **********************/
+@media screen and (min-width: 1400px){
+    /* ROW+CARD EDITING SOUNDTRACK */
+    .soundtrack-card{
+        flex-basis: 190px;
+    }
 }
