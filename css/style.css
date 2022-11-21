@@ -154,6 +154,10 @@ header{
     cursor: pointer;
 }
 
+.upgrade-btn:hover{
+    transform: scale(1.1);
+}
+
 /******** LEFT NAVBAR *********/
     /* left navbar layout */
 nav.flex-column{
@@ -167,6 +171,11 @@ nav.flex-column{
     font-weight: bold;
     vertical-align: middle;
     font-size: 15px;
+}
+
+.nav-desc:hover{
+    color: #fff;
+    cursor: pointer;
 }
 
     /* top-nav */
@@ -188,6 +197,7 @@ nav img{
     transform: scale(0.8);
     vertical-align: middle;
 }
+
 
     /* bottom-nav */
 .nav-download{
@@ -237,6 +247,11 @@ nav img{
     height: 40px;
     background-color: #a3a3a3;
     margin-right: 5px;
+    color: #fff;
+}
+
+.playlist-btn:hover{
+    background-color: #fff;
 }
 
 .playlist-btn a{
@@ -259,6 +274,11 @@ nav img{
     font-size: 15px;
     font-weight: bolder;
     margin: 20px 0px;
+}
+
+.playlist-list li:hover{
+    color: #fff;
+    cursor: pointer;
 }
 
 /******** FOOTER/PLAYER *********/
@@ -286,12 +306,23 @@ nav img{
     color: var(--footer-dark-writing);
 }
 
+.footer-track-name sub:hover{
+    cursor: pointer;
+    color: #fff;
+    text-decoration: underline;
+}
+
     /* left footer icons */
 .left-footer-icons{
     color: var(--footer-dark-writing);
     justify-content: center;
     font-size: 17px;
     gap: 10px;
+}
+
+.left-footer-icons i:hover{
+    color: #fff;
+    cursor: pointer;
 }
 
 /* CENTRAL FOOTER */
@@ -304,6 +335,10 @@ nav img{
 
 .lateral-btn-player{
     font-size: 19px;
+}
+
+.lateral-btn-player:hover{
+    cursor: pointer;
 }
 
 .central-footer .lateral-btn-player:first-child{
@@ -320,6 +355,11 @@ nav img{
 
 .central-btn-player{
     font-size: 35px;
+}
+
+.central-btn-player:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
     /* central footer bottom */
@@ -389,12 +429,16 @@ nav img{
     display: block;
 }
 
+.progress-bar:hover .value{
+    background-color: #9feb2d;
+}
+
 /******** MAIN CONTENT *********/
     /* main-content-menu */
 .main-content-menu{
     justify-content: center;
- font-weight: bold;
- font-size: 14px;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 .main-content-menu li{
@@ -406,9 +450,15 @@ nav img{
     text-transform: uppercase;
 }
 
+.main-content-menu a:hover{
+    color: #fff;
+}
+
 .little-border-bottom{
+    padding-bottom: 2px;
     position: relative;
 }
+
 .little-border-bottom::after{
     content: "";
     position: absolute;
@@ -419,6 +469,16 @@ nav img{
 }
 
 .little-border-left{
+    position: relative;
+}
+
+.little-border-left::after{
+    content: "";
+    position: absolute;
+    right: 10;
+    top: 0;
+    left: -9px;
+    bottom: 0;
     border-left: 2px solid #9feb2d;
 }
 
