@@ -475,7 +475,7 @@ nav img{
 .little-border-left::after{
     content: "";
     position: absolute;
-    right: 10;
+    right: 10px;
     top: 0;
     left: -9px;
     bottom: 0;
