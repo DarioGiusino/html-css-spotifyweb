@@ -404,7 +404,22 @@ nav img{
 .main-content-menu a{
     color: var(--main-darkwriting);
     text-transform: uppercase;
+}
 
+.little-border-bottom{
+    position: relative;
+}
+.little-border-bottom::after{
+    content: "";
+    position: absolute;
+    left: 25px;
+    bottom: 0;
+    width: 50%;
+    border-bottom: 2px solid #9feb2d;
+}
+
+.little-border-left{
+    border-left: 2px solid #9feb2d;
 }
 
     /* ROW+CARD EDITING SOUNDTRACK */
