@@ -48,7 +48,8 @@ nav{
     flex-basis: 55px;
     background-color: #000;
     color: var(--dark-writing);
-    padding: 10px
+    padding: 10px;
+    overflow: hidden;
 }
 
 #main{
@@ -68,6 +69,7 @@ header{
     justify-content: flex-end;
     align-items: center;
     padding-right: 20px;
+    z-index: 1;
 }
 
 .main-content{
@@ -493,15 +495,21 @@ nav img{
 .row{
     display: flex;
     flex-wrap: wrap;
-    margin: 30px -5px 40px -5px;
+    margin: 30px -10px 40px -10px;
 }
 
     /* card */
 .soundtrack-card{
     flex-basis: 50%;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
     text-transform: capitalize;
+    cursor: pointer;
+    transition: transform 1s;
+}
+
+.soundtrack-card figure{
+    position: relative;
 }
 
 .soundtrack-card h3{
@@ -520,6 +528,27 @@ nav img{
     overflow: hidden;
 }
 
+    /* soundtrack card hover effect */
+.soundtrack-card:hover figure{
+    transform: scale(1.05) translateY(-10px);
+}
+
+.soundtrack-card:hover figure::after{
+    content: '\f144';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: bold;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
 
 /* **************************************************
         RESPONSIVE (mobile-first 552px)
@@ -627,5 +656,9 @@ nav img{
     /* ROW+CARD EDITING SOUNDTRACK */
     .soundtrack-card{
         flex-basis: 16%;
+    }
+
+    .soundtrack-card img{
+        width: 100%;
     }
 }
